@@ -5,12 +5,11 @@ import './index.css';
 import Home from './html/index';
 
 import * as serviceWorker from './serviceWorker';
-
+import 'antd/dist/antd.css';
 
 ReactDOM.render(<Home />, document.getElementById('root'));
 
 serviceWorker.unregister();
-
 // ./7.7/html/index 后台管理系统
 // ./7.8/component/muto/index.jsx 组件跳转
 // ./7.9/practice/html/html  二级跳转

@@ -1,0 +1,30 @@
+{
+    "one": {
+        "font": "首页",
+        "num": {
+            "font1": "Sub Group 1",
+            "font2": "Sub Group2",
+            "font3": "Sub Group3",
+            "font4": "Sub Group4"
+        }
+    },
+    "two": {
+        "font": "笔记",
+        "num": {
+            "font1": "Sub Group1",
+            "font2": "Sub Group2",
+            "child": {
+                "img1": "Image"
+            }
+        }
+    },
+    "three": {
+        "font": "作业",
+        "num": {
+            "font1": "7.14",
+            "font2": "Sub Group2",
+            "font3": "Sub Group3",
+            "font4": "Sub Group4"
+        }
+    }
+}
