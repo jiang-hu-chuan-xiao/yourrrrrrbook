@@ -1,9 +1,27 @@
 import React from 'react'
 import './index.scss'
 import { Layout, Menu, Icon } from 'antd';
-import obj from './index.json'
+
 const { Header, Sider, Content } = Layout;
-export default class SiderDemo extends React.Component {
+
+const leftNav = [
+    {
+        iconType: 'solution',
+        text: 'React概述',
+        id: 'WzlBox'
+    },
+    {
+        iconType: 'video-camera',
+        text: '组件类型',
+        id: 'LxaBox'
+    },
+    {
+        iconType: 'upload',
+        text: 'jsx组件'
+    }
+]
+
+export default class index extends React.Component {
     state = {
         collapsed: false,
     };
@@ -20,18 +38,16 @@ export default class SiderDemo extends React.Component {
                 <Sider trigger={null} collapsible collapsed={this.state.collapsed}>
                     <div className="logo" />
                     <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
-                        <Menu.Item key="1">
-                            <Icon type="user" />
-                            <span>nav 1</span>
-                        </Menu.Item>
-                        <Menu.Item key="2">
-                            <Icon type="video-camera" />
-                            <span>nav 2</span>
-                        </Menu.Item>
-                        <Menu.Item key="3">
-                            <Icon type="upload" />
-                            <span>nav 3</span>
-                        </Menu.Item>
+                        {
+                            leftNav.map((item, index) => {
+                                return (
+                                    <Menu.Item key={index} onClick={() => { this.props.getsondata(item.id) }}>
+                                        <Icon type={item.iconType} />
+                                        <span>{item.text}</span>
+                                    </Menu.Item>
+                                )
+                            })
+                        }
                     </Menu>
                 </Sider>
                 <Layout>
@@ -50,7 +66,10 @@ export default class SiderDemo extends React.Component {
                             minHeight: 280,
                         }}
                     >
-                        {obj.one.font}
+                        {/* {obj.one.font} */}
+                        {
+                            this.props.children
+                        }
                     </Content>
                 </Layout>
             </Layout>
