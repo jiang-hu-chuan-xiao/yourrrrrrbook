@@ -137,8 +137,7 @@
   "babel": {
     "presets": [
       "react-app"
-    ],
-    "deploy": "gh-pages -d build"
+    ]
   },
   "homepage": "./"
 }
