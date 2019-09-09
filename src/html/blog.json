@@ -1,0 +1,72 @@
+{
+	"OverView": {
+		"one": {
+			"title": "react发展起源",
+			"content": "2013年6月，Facebook公司正式发布"
+		},
+		"two": {
+			"title": "react现状",
+			"content": "GitHub仓库贡献人数1296人"
+		}
+	},
+	"UseOfComponents": {
+		"one": {
+			"title": "函数组件",
+			"content": "组件命名首字母大学，返回一个虚拟的dom元素，",
+			"attention": "首字母需是大写,不然会自动识别成为原生dom,而在原生dom里没有找到就会报错"
+		},
+		"two": {
+			"title": "createElement创建虚拟dom",
+			"content": "有三个参数：标签类型、props属性、child，标签类型必须是原生H5里有的标签，",
+			"attention": "在js中class是保留关键字，定义类名的时候class要用className"
+		}
+	},
+	"staging": {
+		"one": {
+			"title": "脚手架的搭建和配置",
+			"content": "npm run eject,重新生成依赖和配置文件,只能用一回,解决本地项目里的依赖和全局依赖包版本不一致导致的bug"
+		}
+	},
+	"RenderingComponent": {
+		"one": {
+			"title": "渲染组件-隐式渲染",
+			"content": "props.children,类型是数组，如果单纯地调用它，叫做隐式渲染 显式渲染：React.Children、props.children、cloneElement"
+		},
+		"two": {
+			"title": "渲染组件-显式渲染",
+			"content": "使用react提供的方法对children里的每一项做处理叫做显式渲染，通常是React.Children、props.children、cloneElement三者配合使用"
+		}
+	},
+	"ComponentContrast": {
+		"one": {
+			"title": "函数组件",
+			"content": "没有this、没有生命周期、没有state，简单的调取和返回jsx时使用"
+		},
+		"two": {
+			"title": "类组件",
+			"content": "有this、有生命周期、有state，操作复杂，需要声明周期，基于组件内部状态来动态渲染更新时使用"
+		}
+	},
+	"TopAPI": {
+		"one": {
+			"title": "顶级API",
+			"content": "凡是挂载在React和ReactDOM下面的API都是顶级的"
+		},
+		"two": {
+			"title": "1、React.createElement",
+			"content": "创建虚拟dom，接受三个参数('html原生标签','属性','内容或子组件')"
+		},
+		"three": {
+			"title": "2、React.Children",
+			"content": "处理组件里的children的，常用的是map遍历，接受两个参数(props.children,callback(child,index)"
+		},
+		"fore": {
+			"title": "3、React.cloneElement",
+			"content": "克隆组件里children的每一项子元素，返回一个新的react元素，写法为React.cloneElement('element',{...props},text|children)"
+		},
+		"five": {
+			"title": "4、React.Fragment",
+			"content": "一个组件返回多个元素，相当于包裹容器，不会产生真实的dom，接受唯一的参数key"
+		}
+	}
+}

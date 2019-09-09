@@ -5,8 +5,8 @@ export default class Html extends Component {
     render() {
         return (
             <div>
-                <Card title={date.OverView.one.title} text={date.OverView.one.content} />
-                <Card title={date.OverView.two.title} text={date.OverView.two.content} />
+                <Card title={date.ComponentContrast.one.title} text={date.ComponentContrast.one.content} />
+                <Card title={date.ComponentContrast.two.title} text={date.ComponentContrast.two.content} />
             </div>
         )
     }

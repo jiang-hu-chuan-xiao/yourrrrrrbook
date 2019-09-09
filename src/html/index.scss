@@ -18,3 +18,16 @@
   .ant-layout.ant-layout-has-sider{
     height: 100vh;
   }
+  .logo{
+    line-height: 32px;
+    font-size: 18px;
+    text-align: center;
+    font-family: YouYuan;
+    font-weight:bold;
+    color: #000;
+    text-shadow: 0 1px 1px #fff;
+    overflow: hidden;
+  }
+  .ant-layout-content{
+    // height: 100%;
+  }

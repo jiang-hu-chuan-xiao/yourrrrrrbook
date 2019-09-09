@@ -4,6 +4,16 @@ import Mylayout from './html/index.jsx';
 import WzlBox from './one/index';
 // react组件分类
 import LxaBox from './two/index';
+import Jsj from './three/index'
+import Zjxr from './fore/index'
+import Zjlx from './five/index'
+import Api from './api/index'
+import Cass from './scss/index'
+import Props from './props/index'
+import Life from './life/index'
+import Sjky from './sjky/index'
+import Jdlj from './jdlj/index'
+import Antd from './antd/index'
 
 export default class index extends Component {
     constructor() {
@@ -30,7 +40,37 @@ export default class index extends Component {
                 Dom = <WzlBox />;
                 break;
             case 'LxaBox':
-                Dom = <LxaBox />
+                Dom = <LxaBox />;
+                break;
+            case 'jsj':
+                Dom = <Jsj />;
+                break;
+            case 'xyzj':
+                Dom = <Zjxr />;
+                break;
+            case 'zjlx':
+                Dom = <Zjlx />;
+                break;
+            case 'api':
+                Dom = <Api />;
+                break;
+            case 'cass':
+                Dom = <Cass />;
+                break;
+            case 'props':
+                Dom = <Props />;
+                break;
+            case 'life':
+                Dom = <Life />;
+                break;
+            case 'sjky':
+                Dom = <Sjky />;
+                break;
+            case 'jdlj':
+                Dom = <Jdlj />;
+                break;
+            case 'antd':
+                Dom = <Antd />;
         }
         return (
             <Mylayout getsondata={this.getSonData}>
