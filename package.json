@@ -140,5 +140,5 @@
     ],
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://jiang-hu-chuan-xiao.github.io/yourrrrrrbook/"
+  "homepage": "./"
 }
