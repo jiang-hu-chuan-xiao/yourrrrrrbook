@@ -34,6 +34,7 @@ export default class index extends Component {
     }
     // 渲染函数
     render() {
+        
         let Dom = '';
         switch (this.state.isCom) {
             case 'WzlBox':

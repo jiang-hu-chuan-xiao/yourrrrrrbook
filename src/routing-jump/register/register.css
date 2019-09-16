@@ -1,0 +1,15 @@
+.login{
+    width: 250px;
+    height: 250px;
+    margin:0 auto;
+}
+.login input{
+    margin:10px 0;
+}
+.login-msg{
+    display: flex;
+    justify-content: space-between;
+}
+.login-form-button{
+    width: 100%;
+}
