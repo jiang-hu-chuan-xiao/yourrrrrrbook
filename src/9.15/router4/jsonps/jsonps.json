@@ -1,0 +1,73 @@
+{
+    "Single": {
+        "key": "1",
+        "question": "1.您对互联网的未来发展有什么看法？",
+        "type": "【单选】",
+        "choice": [
+            {
+                "id": "1",
+                "content": "没有看法"
+            },
+            {
+                "id": "2",
+                "content": "我认为996应该尽早废弃"
+            },
+            {
+                "id": "3",
+                "content": "互联网未来会成为主导世界的枢纽"
+            }
+        ]
+    },
+    "Multiple": {
+        "key": "2",
+        "question": "2.您有哪些爱好？",
+        "type": "【多选】",
+        "choice": [
+            {
+                "id": "1",
+                "bool": false,
+                "content": "一天吃5次主食"
+            },
+            {
+                "id": "2",
+                "bool": false,
+                "content": "不光吃5次主食还要喝8杯可乐"
+            },
+            {
+                "id": "3",
+                "bool": false,
+                "content": "除了5次主食8杯可乐还要吃半斤多的零食"
+            },
+            {
+                "id": "4",
+                "bool": false,
+                "content": "吃完上面的食物，打开朋友圈发一条减肥的口号"
+            },
+            {
+                "id": "5",
+                "bool": false,
+                "content": "素食主主义"
+            },
+            {
+                "id": "6",
+                "bool": false,
+                "content": "热爱运动"
+            },
+            {
+                "id": "7",
+                "bool": false,
+                "content": "喜欢古典音乐"
+            },
+            {
+                "id": "8",
+                "bool": false,
+                "content": "喜欢看书，偶尔也写点东西"
+            }
+        ]
+    },
+    "answers": {
+        "key": "3",
+        "question": "3.你认为当代年轻人应该持有怎样的世界观，人生观，价值观？",
+        "type": "【问答】"
+    }
+}

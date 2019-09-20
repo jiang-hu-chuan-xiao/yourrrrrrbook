@@ -1,0 +1,22 @@
+.main{
+    width: 1166px;
+    height: 600px;
+    overflow-y: scroll;
+    background-color: #F2F2F2;
+    .fluid{
+        width: 98%;
+        margin: 1% auto;
+    }
+}
+.form-label{
+    display: block;
+}
+.btn{
+    background: rgb(13, 102, 219);
+    width: 60px;
+    height: 30px;
+}
+textarea{
+    width: 400px;
+    height: 150px;
+}

@@ -1,0 +1,14 @@
+form{
+    width: 250px;
+    margin: 50px auto;
+    button{
+        margin:10px 0;
+        width: 100%;
+    }
+}
+.anticon{
+    margin-top: 10px;
+}
+.ant-input-affix-wrapper .ant-input:not(:first-child){
+    margin-top: 10px;
+}
