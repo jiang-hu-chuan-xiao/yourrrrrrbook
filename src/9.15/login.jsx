@@ -47,7 +47,7 @@ class Login extends Component {
             return notification.open(pass);
         }
         // 接口
-        Axios.get("/api/register.json", {
+        Axios.get("https://jiang-hu-chuan-xiao.github.io/yourrrrrrbook/build//api/register.json", {
             username,
             password
         }).then(res => {

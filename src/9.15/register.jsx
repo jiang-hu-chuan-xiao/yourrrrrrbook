@@ -28,20 +28,20 @@ class Index extends Component {
         return (
             <form autoComplete="off" onReset={this.reSetForm}>
                 <label htmlFor="">
-                    输入框：
                     <Input
                         prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />}
                         type="text"
+                        placeholder="请输入用户名"
                         value={username}
                         onChange={this.handleChange}
                         name="username"
                     />
                 </label>
                 <label htmlFor="">
-                    密码框：
                     <Input
                         prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />}
                         type="password"
+                        placeholder="请输入密码"
                         value={password}
                         onChange={this.handleChange}
                         name="password"
@@ -79,7 +79,7 @@ class Index extends Component {
         }
         // 2.调用接口，接口返回的数据存到全局里面
         // 凡是涉及到用户数据信息的，在接口中一定是用post请求方式
-        axios.get("/api/register.json", { username, password }).then(res => {
+        axios.get("https://jiang-hu-chuan-xiao.github.io/yourrrrrrbook/build//api/register.json", { username, password }).then(res => {
             if (res.status === 200) {
                 // 将账号密码存到本地一份【注意：在真实的项目里，不能这样做，仅适用于测试本地开发】
                 sessionStorage.setItem(
