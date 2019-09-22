@@ -79,7 +79,7 @@ class Index extends Component {
         }
         // 2.调用接口，接口返回的数据存到全局里面
         // 凡是涉及到用户数据信息的，在接口中一定是用post请求方式
-        axios.get("/api/index.json", { username, password }).then(res => {
+        axios.get("/api/register.json", { username, password }).then(res => {
             if (res.status === 200) {
                 // 将账号密码存到本地一份【注意：在真实的项目里，不能这样做，仅适用于测试本地开发】
                 sessionStorage.setItem(

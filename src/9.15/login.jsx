@@ -47,7 +47,7 @@ class Login extends Component {
             return notification.open(pass);
         }
         // 接口
-        Axios.get("/api/index.json", {
+        Axios.get("/api/register.json", {
             username,
             password
         }).then(res => {
