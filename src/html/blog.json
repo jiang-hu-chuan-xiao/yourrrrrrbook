@@ -2,35 +2,51 @@
 	"OverView": {
 		"one": {
 			"title": "react发展起源",
-			"content": "2013年6月，Facebook公司正式发布"
+			"content": "2010 - react最初迹象",
+			"content1": "2011 - 早期原型",
+			"content2": "2012 - fb新变化",
+			"content3": "2013 - 发布之年",
+			"content4": "2014 - 扩张之年",
+			"content5": "2015 - 走向稳定",
+			"content6": "2016 - 引领主流",
+			"content7": "2017 - 改进之年",
+			"content8": "2018 - 现状"
 		},
 		"two": {
-			"title": "react现状",
-			"content": "GitHub仓库贡献人数1296人"
+			"title": "react下一步目标",
+			"content": "React发展之路已经越走越好，但我们依然需要更多学习React。考虑这些，我们决定在6月21日至22日，在华沙举办 React培训"
 		}
 	},
 	"UseOfComponents": {
 		"one": {
 			"title": "函数组件",
-			"content": "组件命名首字母大学，返回一个虚拟的dom元素，",
-			"attention": "首字母需是大写,不然会自动识别成为原生dom,而在原生dom里没有找到就会报错"
+			"content": "组件命名首字母大学，返回一个虚拟的dom元素",
+			"content1": "首字母需是大写,不然会自动识别成为原生dom,而在原生dom里没有找到就会报错"
 		},
 		"two": {
 			"title": "createElement创建虚拟dom",
-			"content": "有三个参数：标签类型、props属性、child，标签类型必须是原生H5里有的标签，",
-			"attention": "在js中class是保留关键字，定义类名的时候class要用className"
+			"content": "有三个参数：标签类型、props属性、child，标签类型必须是原生H5里有的标签",
+			"content1": "在js中class是保留关键字，定义类名的时候class要用className"
 		}
 	},
 	"staging": {
 		"one": {
-			"title": "脚手架的搭建和配置",
-			"content": "npm run eject,重新生成依赖和配置文件,只能用一回,解决本地项目里的依赖和全局依赖包版本不一致导致的bug"
+			"title": "脚手架安装",
+			"content": "cnpm install -g create-react-app",
+			"content1": "create-react-app my-app",
+			"content2": "cd my-app/",
+			"content3": "npm start"
+		},
+		"two": {
+			"title": "脚手架展开所有依赖",
+			"content": "npm run eject:重新生成依赖和配置",
+			"content1": "文件只能用一回,解决本地项目里的依赖和全局依赖包版本不一致导致的bug"
 		}
 	},
 	"RenderingComponent": {
 		"one": {
 			"title": "渲染组件-隐式渲染",
-			"content": "props.children,类型是数组，如果单纯地调用它，叫做隐式渲染 显式渲染：React.Children、props.children、cloneElement"
+			"content": "props.children,类型是数组，如果单纯地调用它，叫做隐式渲染"
 		},
 		"two": {
 			"title": "渲染组件-显式渲染",
@@ -43,8 +59,11 @@
 			"content": "没有this、没有生命周期、没有state，简单的调取和返回jsx时使用"
 		},
 		"two": {
-			"title": "类组件",
-			"content": "有this、有生命周期、有state，操作复杂，需要声明周期，基于组件内部状态来动态渲染更新时使用"
+			"title": "class组件",
+			"content1": "定义：容器组件、功能组件",
+			"content2": "详解： class关键字声明、<组件名称>、extends继承谁、React.Component 基础类",
+			"content3": "说明： 在class里的继承，必须是class，只有class才能继承class",
+			"content4": "有this、有生命周期、有state，操作复杂，需要声明周期，基于组件内部状态来动态渲染更新时使用"
 		}
 	},
 	"TopAPI": {

@@ -14,6 +14,15 @@ import Life from './life/index'
 import Sjky from './sjky/index'
 import Jdlj from './jdlj/index'
 import Antd from './antd/index'
+import Gjzj from './gjzj/index'
+import Jtsy from './jtsy/index'
+import Refs from './refs/index'
+import Sjbd from './sjbd/index'
+import Sjdx from './sjdx/index'
+import Tjxr from './tjxr/index'
+import Zjnzapi from './zjnzapi/index'
+import Setstate from './setstate/index'
+import Option from './option/index'
 
 export default class index extends Component {
     constructor() {
@@ -71,6 +80,33 @@ export default class index extends Component {
                 break;
             case 'antd':
                 Dom = <Antd />;
+                break;
+            case 'gjzj':
+                Dom = <Gjzj />;
+                break;
+            case 'jtsy':
+                Dom = <Jtsy />;
+                break;
+            case 'refs':
+                Dom = <Refs />;
+                break;
+            case 'sjbd':
+                Dom = <Sjbd />;
+                break;
+            case 'sjdx':
+                Dom = <Sjdx />;
+                break;
+            case 'tjxr':
+                Dom = <Tjxr />;
+                break;
+            case 'zjnzapi':
+                Dom = <Zjnzapi />;
+                break;
+            case 'setstate':
+                Dom = <Setstate />;
+                break;
+            case 'option':
+                Dom = <Option />;
         }
         return (
             <Mylayout getsondata={this.getSonData}>

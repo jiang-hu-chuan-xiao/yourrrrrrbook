@@ -56,7 +56,7 @@ const leftNav = [
         id: 'sjky'
     },
     {
-        iconType: 'taobao-circle',
+        iconType: 'solution',
         text: '绝对路径',
         id: 'jdlj'
     },
@@ -64,6 +64,51 @@ const leftNav = [
         iconType: 'taobao-circle',
         text: 'antd',
         id: 'antd'
+    },
+    {
+        iconType: 'video-camera',
+        text: '高阶组件',
+        id: 'gjzj'
+    },
+    {
+        iconType: 'taobao-circle',
+        text: '模板组件',
+        id: 'jtsy'
+    },
+    {
+        iconType: 'video-camera',
+        text: 'refs',
+        id: 'refs'
+    },
+    {
+        iconType: 'taobao-circle',
+        text: '事件绑定',
+        id: 'sjbd'
+    },
+    {
+        iconType: 'video-camera',
+        text: '节流与防抖',
+        id: 'sjdx'
+    },
+    {
+        iconType: 'taobao-circle',
+        text: '条件渲染',
+        id: 'tjxr'
+    },
+    {
+        iconType: 'video-camera',
+        text: '更新',
+        id: 'zjnzapi'
+    },
+    {
+        iconType: 'taobao-circle',
+        text: 'setstate',
+        id: 'setstate'
+    },
+    {
+        iconType: 'taobao-circle',
+        text: '表单选项',
+        id: 'option'
     }
 ]
 
@@ -77,12 +122,42 @@ export default class index extends React.Component {
             collapsed: !this.state.collapsed,
         });
     };
+    componentDidMount() {
+        var obj = window.parent.document;
+        //
+        function onMouseWheel(e) {
+            var e = e || window.event;
+            if (e.type == "mousewheel") {
+                delta = e.wheelDelta / 12;
+            } else {
+                delta = e.detail / 3 * -10;
+            };
 
+            if (chrome != -1) {
+            } else {
+                obj.documentElement.scrollTop -= delta;
+                //阻止默认事件
+                if (e.preventDefault) {
+                    e.preventDefault();
+                }
+                return false;
+            }
+        }
+
+        if (obj != null && obj != undefined) {
+            var chrome = navigator.userAgent.search(/chrome/i),
+                delta = 0;
+
+            if (chrome != -1) {
+                document.addEventListener("mousewheel", onMouseWheel, false);
+            }
+        }
+    }
     render() {
         return (
             <Layout>
                 <Sider trigger={null} collapsible collapsed={this.state.collapsed}>
-                    <div className="logo"><span>无名博客</span></div>
+                    <div className="logo"><span>蛋蛋公司</span></div>
                     <Menu theme="dark" mode="inline" defaultSelectedKeys={['0']}>
                         {
                             leftNav.map((item, index) => {

@@ -16,6 +16,7 @@
     margin: 16px;
   }
   .ant-layout.ant-layout-has-sider{
+    overflow-y: hidden;
     height: 100vh;
   }
   .logo{
@@ -28,9 +29,10 @@
     text-shadow: 0 1px 1px #fff;
     overflow: hidden;
   }
-  .ant-layout-content{
-    // height: 100%;
-  }
   .ant-card{
     width: 100% !important;
   }
+.ant-layout-sider-children{
+  overflow-x: hidden;
+  overflow-y: scroll;
+}

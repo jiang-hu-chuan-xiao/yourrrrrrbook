@@ -5,8 +5,10 @@ export default class Html extends Component {
     render() {
         return (
             <div>
-                <Card title={date.props.one.title} text={date.props.one.content + date.props.one.contentone} />
-                <Card title={date.props.two.title} text={date.props.two.content + date.props.one.contentone} />
+                <Card title={date.props.one.title} text={date.props.one.content} />
+                <Card text={date.props.one.contentone} />
+                <Card title={date.props.two.title} text={date.props.two.content} />
+                <Card text={date.props.one.contentone} />
             </div>
         )
     }

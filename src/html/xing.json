@@ -1,0 +1,66 @@
+{
+    "gjzj": {
+        "one": {
+            "title": "定义:",
+            "content": "高阶组件（HOC）是React中用于复用组件逻辑的一种高阶技巧HOC自身不是",
+            "contentone": "React API 的一部分 他是一种基于React的组合特性而形成的设计模式"
+        },
+        "two": { 
+            "title": "概念:",
+            "content": "高阶组件的参数为组件 返回值为新组件的函数"
+        }
+    },
+    "jtsy": {
+        "one": {
+            "title": "模板组件:",
+            "content": "接受传入的props 将props转换为ui组件然后返回出去",
+            "contentone": "组合的方式就是加工 为的是把相同的复用性强的都抽出成一个公共的我们只需要把不同的传入进去 ，然后带出来一个我们需要的"
+        }
+    },
+    "refs":{
+        "one":{
+            "title":"refs不会被传递",
+            "content":"虽然高阶组件的约定是将所有的props传递给包装组件但这对于refs并不适用。那是因为ref实际上并不是一个props-就像key一样他是由React专门处理的 如果将ref添加到HOC的返回组件中则ref引用指向容器组件 而不是被包组件"
+        }
+    },
+    "sjbd":{
+        "one":{
+            "title":"事件绑定",
+            "content":"在无状态组件中使用事件有两种 1、直接在函数中声明方法 2、调用父组件传入的方法",
+            "contentone":"在class中使用事件需要绑定this 1、最佳的方法就是声明事件的时候就用箭头函数这样就不用每次调用都实例化this 2、在构造函数中绑定this 3、在dom上绑定时使用箭头函数"
+        }
+    },
+    "sjdx":{
+        "one":{
+            "title":"概念与定义",
+            "content":"event对象不是我们浏览器原始的事件对象 而是react封装后的 所有不存在浏览器兼容性（ie被抛弃了）",
+            "contentone":"节流（throttle） 当达到了一定的 时间间隔就会执行一次 可以理解为是缩减执行频率",
+            "contenttwo":"防抖（debounce）将若干函数调用合成为一次 并在给定时间过去之后 或者连续时间完全触发完成之后 调用一次"
+        }
+    },
+    "tjxr":{
+        "one":{
+            "title":"条件渲染",
+            "content":"通过计算得到布尔值 加载组件或销毁组件 当然也可以使用display控制 相对比每次重新加载在性能上要好很多 适用于动画场景或纯静态页面",
+            "contentone":"在组件内部可以使用if && 三目运算符去控制渲染"
+        }
+    },
+    "zjnzapi":{
+        "one":{
+            "title":"this.state:状态",
+            "content":"this.setState:修改状态",
+            "contentone":"props.children:隐式渲染子组件 ①<Father><Son/></Father>②React.Children(props.children(item,index)=> {})",
+            "contenttwo":"this.forceUpdata():强制更新"
+        }
+    },
+    "setstate":{
+        "one":{
+            "title":"异步",
+            "content":"setState是异步方法，React为了优化性能，它会将一时间内的setState方法合并成一个",
+            "contentone":"发现问题：因为setState是个异步的方法，并且在同一时间内多次调用会被合并成一个，会导致我们在获取state值是不精确",
+            "contenttwo":"解决问题：setState接收两个参数，两个参数都是函数 第一个函数是用来修改state状态的，第二个函数是获取被修改后的state值，用这样的形式去写，就保证我们能精确拿到state值了",
+            "contentthree":"原理：将setState异步方法变成同步方法",
+            "contentfore":"使用场景：在请求接口里使用"
+        }
+    }
+}

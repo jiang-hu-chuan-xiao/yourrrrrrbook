@@ -1,0 +1,102 @@
+.quan{
+    width: 800px;
+    height: 750px;
+    margin: 0 auto;
+    /* display: flex; */
+    /* background: pink; */
+}
+
+.dan{
+    margin-top: -20px;
+    width: 800px;
+    height: 200px;
+    /* background: pink; */
+}
+/* .dan1{
+    position: absolute;
+    left: 564px;
+    top:50px;
+}
+.dan2{
+    position: absolute;
+    left: 564px;
+    top:100px;
+}
+.dan3{
+    position: absolute;
+    left: 564px;    
+    top:150px;
+} */
+
+.duo{
+    margin-top: -40px;
+    width: 800px;
+    height: 400px;
+    /* background: pink; */
+}
+/* .duo1{
+    position: absolute;
+    left:565px;
+    top:250px;
+}
+.duo2{
+    position: absolute;
+    left:565px;
+    top:290px;
+}
+.duo3{
+    position: absolute;
+    left:565px;
+    top:330px;
+}
+.duo4{
+    position: absolute;
+    left:565px;
+    top:370px;
+}
+.duo5{
+    position: absolute;
+    left:565px;
+    top:410px;
+}
+.duo6{
+    position: absolute;
+    left:565px;
+    top:450px;
+}
+.duo7{
+    position: absolute;
+    left:565px;
+    top:490px;
+}
+.duo8{
+    position: absolute;    
+    left:565px;
+    top:530px;
+} */
+label{
+    display: block;
+    margin: 10px 0;
+}
+.ti{
+    width: 700px;
+    height: 50px;
+    margin-left: 50px;
+    margin-top: 10px;
+    border: 1px solid #CCC;
+}
+.jiao{
+    width: 200px;
+    height: 50px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 50px;
+    color: #000;
+    font-size: 25px;
+    border: 3px solid #27405E;
+    /* background: hotpink; */
+}
+.ant-menu ant-menu-dark ant-menu-root ant-menu-inline{
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }

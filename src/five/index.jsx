@@ -6,7 +6,10 @@ export default class Html extends Component {
         return (
             <div>
                 <Card title={date.ComponentContrast.one.title} text={date.ComponentContrast.one.content} />
-                <Card title={date.ComponentContrast.two.title} text={date.ComponentContrast.two.content} />
+                <Card title={date.ComponentContrast.two.title} text={date.ComponentContrast.two.content1} />
+                <Card text={date.ComponentContrast.two.content2} />
+                <Card text={date.ComponentContrast.two.content3} />
+                <Card text={date.ComponentContrast.two.content4} />
             </div>
         )
     }
